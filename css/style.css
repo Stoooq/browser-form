@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  color: #fff;
+  font-size: 26px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #333;
+}
+
+.data-info {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: -225px;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 225px;
+  background-color: #fff;
+  z-index: 2;
+  transform: translate 0.3s;
+}
+.data-info .data-text {
+  color: #333;
+  font-size: 26px;
+  font-weight: bold;
+}
+.data-info .data-confirm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 60px;
+  background-color: #333;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.data-info .data-confirm:hover {
+  background-color: #666;
+}
+
+.active {
+  transform: translate(-300px, 225px);
+}
+
+.browser-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  filter: blur(0px);
+  transition: 0.3s;
+}
+.browser-form .heading {
+  font-size: 60px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: default;
+}
+.browser-form .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  margin: 30px;
+  width: 400px;
+  height: 600px;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  color: #333;
+}
+.browser-form .form .title {
+  cursor: default;
+}
+.browser-form .form .form-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+}
+.browser-form .form .form-item .text {
+  cursor: default;
+}
+.browser-form .form .form-item .select select {
+  background: none;
+}
+.browser-form .form .form-item .input {
+  width: 100%;
+  height: 50%;
+}
+.browser-form .form .form-item .input input,
+.browser-form .form .form-item .input select {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  font-size: 16px;
+}
+.browser-form .form .form-item .input input:focus,
+.browser-form .form .form-item .input select:focus {
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.browser-form .form .form-item .input::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 300px;
+  height: 2px;
+  background-color: #333;
+}
+.browser-form .form .confirm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 60px;
+  background-color: #333;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.browser-form .form .confirm:hover {
+  background-color: #666;
+}
+
+.form-hide {
+  filter: blur(4px);
+  pointer-events: none;
+}/*# sourceMappingURL=style.css.map */
